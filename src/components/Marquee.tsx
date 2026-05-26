@@ -43,14 +43,11 @@ export default function Marquee() {
   const tripleIcons = [...icons, ...icons, ...icons, ...icons];
 
   return (
-    <div 
-      className="w-full bg-white border-b border-gray-200 py-10 overflow-hidden flex"
-      style={{
-        // Hardware mask clip that builds alpha gradients on side vectors directly in GPU layers
-        maskImage: "linear-gradient(to right, transparent, black 15%, black 85%, transparent)",
-        WebkitMaskImage: "linear-gradient(to right, transparent, black 15%, black 85%, transparent)",
-      }}
-    >
+    <div className="w-full bg-white border-b border-gray-200 py-10 overflow-hidden flex relative">
+      {/* Left and Right White Fade Overlays */}
+      <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
+      <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
+
       {/* Container Track Wrapper */}
       <div className="flex w-max shrink-0 gap-24 items-center">
         {/* Loop Element 1 */}
