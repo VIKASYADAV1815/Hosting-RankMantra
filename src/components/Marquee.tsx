@@ -47,8 +47,8 @@ export default function Marquee() {
       className="w-full bg-white border-b border-gray-200 py-10 overflow-hidden flex"
       style={{
         // Hardware mask clip that builds alpha gradients on side vectors directly in GPU layers
-        maskImage: "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",
-        WebkitMaskImage: "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",
+        maskImage: "linear-gradient(to right, transparent, black 15%, black 85%, transparent)",
+        WebkitMaskImage: "linear-gradient(to right, transparent, black 15%, black 85%, transparent)",
       }}
     >
       {/* Container Track Wrapper */}
