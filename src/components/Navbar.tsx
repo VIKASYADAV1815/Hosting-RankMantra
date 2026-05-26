@@ -8,7 +8,7 @@ import { ChevronDown, Menu, X, User, Phone, Mail } from 'lucide-react';
 const navLinks = [
   { name: 'Home', href: '/' },
   {
-    name: 'Services',
+    name: 'Hosting',
     href: '#',
     dropdown: [
       { name: 'Web Hosting', href: '/web-hosting' },

@@ -88,7 +88,7 @@ export default function Pricing() {
           <h2 className="text-4xl md:text-5xl font-normal tracking-tight text-neutral-900 mb-6">
             Pricing
           </h2>
-          <p className="text-base md:text-lg text-neutral-500 font-normal leading-relaxed">
+          <p className="text-base md:text-lg text-neutral-500 font-medium leading-relaxed">
             Premium hosting features included at the best prices. Crafted for speed and reliability.
           </p>
         </div>
@@ -126,7 +126,7 @@ export default function Pricing() {
                   <div className={`flex items-center justify-between border rounded-md px-3 py-2 mb-4 ${
                     plan.isPopular ? 'border-neutral-700 bg-neutral-800' : 'border-neutral-200 bg-gray-50'
                   }`}>
-                    <span className={`text-sm ${plan.isPopular ? 'text-neutral-300' : 'text-neutral-600'}`}>
+                    <span className={`text-sm font-medium ${plan.isPopular ? 'text-neutral-300' : 'text-neutral-600'}`}>
                       3 Years @
                     </span>
                     <div className="flex items-center gap-2">
@@ -142,7 +142,7 @@ export default function Pricing() {
                   {/* Pricing Matrix */}
                   <div className="mb-8">
                     <div className="flex items-center gap-2 mb-1">
-                      <span className="text-sm text-neutral-400 line-through">Rs {plan.oldPrice} INR/mo</span>
+                      <span className="text-sm font-medium text-neutral-400 line-through">Rs {plan.oldPrice} INR/mo</span>
                     </div>
                     <div className="flex items-baseline font-normal">
                       <span className={`text-4xl font-semibold tracking-tight ${
@@ -150,7 +150,7 @@ export default function Pricing() {
                       }`}>
                         <span className="text-[#E00C15]">Rs</span>{plan.price}
                       </span>
-                      <span className="text-xs ml-1 text-neutral-400">INR/mo</span>
+                      <span className="text-xs font-medium ml-1 text-neutral-400">INR/mo</span>
                     </div>
                   </div>
 
@@ -173,7 +173,7 @@ export default function Pricing() {
                         <span className="text-xs font-semibold select-none shrink-0 text-[#E00C15]">
                           +
                         </span>
-                        <span className={plan.isPopular ? 'text-neutral-300' : 'text-neutral-600'}>
+                        <span className={`font-medium ${plan.isPopular ? 'text-neutral-300' : 'text-neutral-600'}`}>
                           {feature}
                         </span>
                       </div>
@@ -185,7 +185,7 @@ export default function Pricing() {
           </div>
 
           {/* Subbar Footer Info Line */}
-          <div className="bg-white border-t border-neutral-200 py-4 text-center text-xs text-neutral-400 font-normal flex items-center justify-center gap-1.5">
+          <div className="bg-white border-t border-neutral-200 py-4 text-center text-xs text-neutral-400 font-medium flex items-center justify-center gap-1.5">
             <span className="text-[#E00C15]">⚡</span> Automated provisioning. Instant migration deployment setup.
           </div>
         </div>
@@ -199,7 +199,7 @@ export default function Pricing() {
                 <span className="text-xs bg-[#E00C15]/10 px-2 py-0.5 rounded text-[#E00C15] font-medium">Platform</span>
                 <h4 className="font-semibold text-sm text-neutral-900">WordPress Optimized Architecture</h4>
               </div>
-              <p className="text-xs text-neutral-400">Trusted setups tuned for high velocity configurations.</p>
+              <p className="text-xs font-medium text-neutral-400">Trusted setups tuned for high velocity configurations.</p>
             </div>
             <button className="bg-[#E00C15] text-white text-xs font-medium px-4 py-2 rounded-full hover:bg-[#c00a12] transition-colors whitespace-nowrap">
               Learn Infrastructure
@@ -213,7 +213,7 @@ export default function Pricing() {
                 <span className="text-xs bg-neutral-800 px-2 py-0.5 rounded text-neutral-400 font-medium">Performance</span>
                 <h4 className="font-semibold text-sm text-white">NVMe Enterprise Arrays</h4>
               </div>
-              <p className="text-xs text-neutral-500">Fully vetted SSD architecture for low latency response.</p>
+              <p className="text-xs font-medium text-neutral-500">Fully vetted SSD architecture for low latency response.</p>
             </div>
             <button className="bg-neutral-800 border border-neutral-700 text-white hover:text-[#E00C15] hover:border-[#E00C15]/30 text-xs font-medium px-4 py-2 rounded-full transition-colors whitespace-nowrap">
               Review Benchmarks

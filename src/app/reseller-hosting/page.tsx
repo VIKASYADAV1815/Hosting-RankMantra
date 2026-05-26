@@ -24,8 +24,9 @@ export default function ResellerHosting() {
       <ResellerIntro />
       <ResellerFeatures />
       
-      {/* Reusing standard pricing component to give them pricing options. */}
+      {/* Reusing standard pricing component to give them pricing options. 
       <Pricing />
+      */}
       
       <WebHostingCTA />
       <Footer />
