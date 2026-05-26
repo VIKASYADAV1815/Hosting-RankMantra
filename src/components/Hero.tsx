@@ -31,11 +31,11 @@ export default function Hero() {
   return (
     <section 
       ref={containerRef}
-      className="relative w-full h-screen min-h-175 flex items-center justify-center overflow-hidden bg-[#2D2D2D]"
+      className="relative w-full h-screen min-h-[175px] flex items-center justify-center bg-[#2D2D2D]"
     >
       {/* Background Image Track */}
       <motion.div 
-        className="absolute inset-0 z-0 h-[120%]" 
+        className="absolute inset-0 z-0 h-[120%] overflow-hidden" 
         style={{ y: yBg, willChange: "transform" }}
       >
         <img 
