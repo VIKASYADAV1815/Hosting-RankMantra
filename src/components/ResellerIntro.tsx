@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function ResellerIntro() {
   return (
     <section className="py-24 bg-white relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(#4B4B4B_1px,transparent_1px)] [background-size:24px_24px] opacity-[0.03] pointer-events-none"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(#4B4B4B_1px,transparent_1px)] bg-size-[24px_24px] opacity-[0.03] pointer-events-none"></div>
       
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div

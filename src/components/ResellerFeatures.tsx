@@ -19,7 +19,7 @@ export default function ResellerFeatures() {
   return (
     <section className="py-24 bg-[#FAFAFA] relative overflow-hidden">
       {/* Editorial Tech Blueprint Lines */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#f0000005_1px,transparent_1px),linear-gradient(to_bottom,#f0000005_1px,transparent_1px)] bg-[size:3rem_3rem]" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#f0000005_1px,transparent_1px),linear-gradient(to_bottom,#f0000005_1px,transparent_1px)] bg-size-[3rem_3rem]" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -45,7 +45,7 @@ export default function ResellerFeatures() {
               <div
                 key={idx}
                 onMouseEnter={() => setHoveredIdx(idx)}
-                className="bg-white hover:bg-gradient-to-br hover:from-white hover:to-[#E00C15]/[0.04] p-8 relative overflow-hidden transition-all duration-300 flex flex-col items-center text-center group min-h-[220px] cursor-default"
+                className="bg-white hover:bg-linear-to-br hover:from-white hover:to-[#E00C15]/4 p-8 relative overflow-hidden transition-all duration-300 flex flex-col items-center text-center group min-h-55 cursor-default"
                 style={{
                   opacity: anyHovered && !isHovered ? 0.6 : 1,
                   transform: isHovered ? "scale(1.02)" : "scale(1)",
@@ -54,8 +54,8 @@ export default function ResellerFeatures() {
                 }}
               >
                 {/* Active Accent Border Corners */}
-                <div className={`absolute top-0 left-0 w-full h-[2px] bg-[#E00C15] transition-transform duration-300 origin-left scale-x-0 ${isHovered ? "scale-x-100" : ""}`} />
-                <div className={`absolute bottom-0 right-0 w-full h-[2px] bg-[#E00C15] transition-transform duration-300 origin-right scale-x-0 ${isHovered ? "scale-x-100" : ""}`} />
+                <div className={`absolute top-0 left-0 w-full h-0.5 bg-[#E00C15] transition-transform duration-300 origin-left scale-x-0 ${isHovered ? "scale-x-100" : ""}`} />
+                <div className={`absolute bottom-0 right-0 w-full h-0.5 bg-[#E00C15] transition-transform duration-300 origin-right scale-x-0 ${isHovered ? "scale-x-100" : ""}`} />
 
                 {/* Icon */}
                 <div className="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center text-[#4B4B4B] mb-6 group-hover:bg-[#E00C15] group-hover:text-white transition-colors duration-300 shadow-sm">

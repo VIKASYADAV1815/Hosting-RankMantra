@@ -25,7 +25,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-white font-sans text-[#494949]">
         <Navbar />
-        <div className="flex-grow pt-[100px]">
+        <div className="grow pt-25">
           {children}
         </div>
       </body>

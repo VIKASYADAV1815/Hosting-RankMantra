@@ -32,7 +32,7 @@ export default function PageHero({
   return (
     <section 
       ref={containerRef}
-      className="relative w-full min-h-[300px] md:min-h-[350px] py-16 flex items-center justify-center overflow-hidden bg-[#2D2D2D]"
+      className="relative w-full min-h-75 md:min-h-87.5 py-16 flex items-center justify-center overflow-hidden bg-[#2D2D2D]"
     >
       {/* Background Image Track */}
       <motion.div 
@@ -46,7 +46,7 @@ export default function PageHero({
         />
         {/* Adjusted solid opacity overlays so text has massive contrast */}
         <div className="absolute inset-0 bg-black/65 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#3A3A3A] via-black/40 to-black/50" />
+        <div className="absolute inset-0 bg-linear-to-t from-[#3A3A3A] via-black/40 to-black/50" />
       </motion.div>
 
       {/* Content Layer */}
@@ -81,7 +81,7 @@ export default function PageHero({
             <ul className="flex flex-row flex-wrap justify-center gap-4 md:gap-8 text-center mx-auto text-white text-sm md:text-base font-medium drop-shadow-sm mt-2">
               {features.map((feature, idx) => (
                 <li key={idx} className="flex items-center gap-2 bg-black/30 px-4 py-2 rounded-full backdrop-blur-sm border border-white/10">
-                  <CheckCircle2 className="text-[#E00C15] flex-shrink-0" size={18} />
+                  <CheckCircle2 className="text-[#E00C15] shrink-0" size={18} />
                   {feature}
                 </li>
               ))}

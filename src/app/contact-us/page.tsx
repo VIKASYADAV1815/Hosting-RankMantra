@@ -35,7 +35,7 @@ export default function ContactUs() {
         }
       />
 
-      <div className="flex-grow max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <div className="grow max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 items-start">
           

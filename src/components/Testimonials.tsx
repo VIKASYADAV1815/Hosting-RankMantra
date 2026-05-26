@@ -41,7 +41,7 @@ export default function InfiniteTestimonials() {
   return (
     <section className="py-24 bg-white relative overflow-hidden w-full">
       {/* Crisp background grid */}
-      <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] bg-size-[16px_16px] pointer-events-none" />
 
       <div className="text-center mb-16 px-4 relative z-10">
         <h2 className="text-3xl font-bold text-[#4B4B4B] tracking-tight md:text-4xl">
@@ -52,8 +52,8 @@ export default function InfiniteTestimonials() {
       {/* Marquee Wrapper */}
       <div className="relative flex w-full overflow-hidden items-center z-10">
         {/* Soft edge masking layers */}
-        <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-20 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-20 pointer-events-none" />
+        <div className="absolute left-0 top-0 bottom-0 w-32 bg-linear-to-r from-white to-transparent z-20 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-32 bg-linear-to-l from-white to-transparent z-20 pointer-events-none" />
 
         {/* 120FPS Accelerated Container */}
         <motion.div
@@ -69,12 +69,12 @@ export default function InfiniteTestimonials() {
           {doubleTestimonials.map((item, idx) => (
             <div
               key={idx}
-              className="w-[300px] sm:w-[350px] shrink-0 bg-white border-2 border-gray-200 hover:border-[#4B4B4B] rounded-xl p-6 shadow-sm flex flex-col justify-between transition-colors duration-200 group"
+              className="w-75 sm:w-87.5 shrink-0 bg-white border-2 border-gray-200 hover:border-[#4B4B4B] rounded-xl p-6 shadow-sm flex flex-col justify-between transition-colors duration-200 group"
             >
               <div>
                 <Quote className="w-6 h-6 text-[#E00C15]/20 mb-4 transition-colors duration-200 group-hover:text-[#E00C15]/40" />
                 {/* Increased Content Font Size */}
-                <p className="text-sm sm:text-[15px] text-gray-700 leading-relaxed font-medium min-h-[90px]">
+                <p className="text-sm sm:text-[15px] text-gray-700 leading-relaxed font-medium min-h-22.5">
                   "{item.content}"
                 </p>
               </div>

@@ -18,7 +18,7 @@ export default function Hero() {
   return (
     <section 
       ref={containerRef}
-      className="relative w-full h-screen min-h-[700px] flex items-center justify-center overflow-hidden bg-[#2D2D2D]"
+      className="relative w-full h-screen min-h-175 flex items-center justify-center overflow-hidden bg-[#2D2D2D]"
     >
       {/* Background Image Track */}
       <motion.div 
@@ -32,7 +32,7 @@ export default function Hero() {
         />
         {/* Adjusted solid opacity overlays so text has massive contrast */}
         <div className="absolute inset-0 bg-black/65 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#3A3A3A] via-black/40 to-black/50" />
+        <div className="absolute inset-0 bg-linear-to-t from-[#3A3A3A] via-black/40 to-black/50" />
       </motion.div>
 
       {/* Content Layer (Keeps Your Exact Original Text, Font Weights, and Tags) */}

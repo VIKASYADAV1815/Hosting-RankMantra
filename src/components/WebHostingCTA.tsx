@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function WebHostingCTA() {
   return (
-    <section className="py-32 relative overflow-hidden flex items-center justify-center min-h-[400px]">
+    <section className="py-32 relative overflow-hidden flex items-center justify-center min-h-100">
       {/* Background Image */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
@@ -14,7 +14,7 @@ export default function WebHostingCTA() {
       
       {/* Overlay to ensure text readability */}
       <div className="absolute inset-0 z-0 bg-black/75 mix-blend-multiply" />
-      <div className="absolute inset-0 z-0 bg-gradient-to-r from-[#4B4B4B]/80 to-[#E00C15]/20" />
+      <div className="absolute inset-0 z-0 bg-linear-to-r from-[#4B4B4B]/80 to-[#E00C15]/20" />
       
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         <motion.div

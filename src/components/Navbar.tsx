@@ -13,7 +13,6 @@ const navLinks = [
     dropdown: [
       { name: 'Web Hosting', href: '/web-hosting' },
       { name: 'Reseller Hosting', href: '/reseller-hosting' },
-      { name: 'VPS Hosting', href: '/vps-hosting' },
     ],
   },
   {
@@ -47,7 +46,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex items-center">
-            <Link href="/" className="flex-shrink-0 flex items-center">
+            <Link href="/" className="shrink-0 flex items-center">
               <Image src="/logo.png" alt="RankMantra" width={180} height={50} className="h-10 w-auto" />
             </Link>
           </div>
@@ -77,7 +76,7 @@ export default function Navbar() {
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 10, scale: 0.95 }}
                         transition={{ duration: 0.2, ease: "easeOut" }}
-                        className="absolute top-[60px] left-0 w-56 bg-white shadow-xl border border-gray-100 overflow-hidden rounded-2xl"
+                        className="absolute top-15 left-0 w-56 bg-white shadow-xl border border-gray-100 overflow-hidden rounded-2xl"
                       >
                         <div className="p-2">
                           {link.dropdown.map((item) => (

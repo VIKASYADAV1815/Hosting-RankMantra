@@ -69,7 +69,7 @@ export default function TechSpecs() {
   return (
     <section className="py-24 bg-slate-50 relative border-b border-gray-200">
       {/* Subtle Dot Pattern */}
-      <div className="absolute inset-0 bg-[radial-gradient(#4B4B4B_1px,transparent_1px)] [background-size:16px_16px] opacity-[0.03] pointer-events-none"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(#4B4B4B_1px,transparent_1px)] bg-size-[16px_16px] opacity-[0.03] pointer-events-none"></div>
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
@@ -88,7 +88,7 @@ export default function TechSpecs() {
               className="group relative border border-gray-200 bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all"
             >
               {/* Dot pattern inside boxes on hover */}
-              <div className="absolute inset-0 bg-[radial-gradient(#4B4B4B_1px,transparent_1px)] [background-size:16px_16px] opacity-0 pointer-events-none group-hover:opacity-[0.03] transition-opacity"></div>
+              <div className="absolute inset-0 bg-[radial-gradient(#4B4B4B_1px,transparent_1px)] bg-size-[16px_16px] opacity-0 pointer-events-none group-hover:opacity-[0.03] transition-opacity"></div>
               
               <button
                 onClick={() => setOpenIndex(openIndex === idx ? null : idx)}

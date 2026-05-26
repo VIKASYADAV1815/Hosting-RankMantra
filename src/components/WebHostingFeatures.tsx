@@ -17,7 +17,7 @@ export default function WebHostingFeatures() {
   return (
     <section className="py-28 bg-[#FAFAFA] relative overflow-hidden">
       {/* Editorial Tech Blueprint Lines */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#f0000005_1px,transparent_1px),linear-gradient(to_bottom,#f0000005_1px,transparent_1px)] bg-[size:3rem_3rem]" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#f0000005_1px,transparent_1px),linear-gradient(to_bottom,#f0000005_1px,transparent_1px)] bg-size-[3rem_3rem]" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -43,7 +43,7 @@ export default function WebHostingFeatures() {
               <div
                 key={idx}
                 onMouseEnter={() => setHoveredIdx(idx)}
-                className="bg-gradient-to-br from-white to-[#E00C15]/[0.04] p-8 relative overflow-hidden transition-all duration-300 flex flex-col justify-between group min-h-[260px] cursor-pointer"
+                className="bg-linear-to-br from-white to-[#E00C15]/4 p-8 relative overflow-hidden transition-all duration-300 flex flex-col justify-between group min-h-65 cursor-pointer"
                 style={{
                   opacity: anyHovered && !isHovered ? 0.4 : 1,
                   transform: isHovered ? "scale(1.01)" : "scale(1)",
@@ -52,8 +52,8 @@ export default function WebHostingFeatures() {
                 }}
               >
                 {/* Active Accent Border Corners */}
-                <div className={`absolute top-0 left-0 w-full h-[2px] bg-[#E00C15] transition-transform duration-300 origin-left scale-x-0 ${isHovered ? "scale-x-100" : ""}`} />
-                <div className={`absolute top-0 right-0 w-[2px] h-full bg-[#E00C15] transition-transform duration-300 origin-top scale-y-0 ${isHovered ? "scale-y-100" : ""}`} />
+                <div className={`absolute top-0 left-0 w-full h-0.5 bg-[#E00C15] transition-transform duration-300 origin-left scale-x-0 ${isHovered ? "scale-x-100" : ""}`} />
+                <div className={`absolute top-0 right-0 w-0.5 h-full bg-[#E00C15] transition-transform duration-300 origin-top scale-y-0 ${isHovered ? "scale-y-100" : ""}`} />
 
                 <div>
                   {/* Card Upper Metadata Layout */}

@@ -15,11 +15,11 @@ export default function Announcements() {
         }
       />
 
-      <div className="flex-grow max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+      <div className="grow max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-8 md:py-12">
         <div className="flex flex-col md:flex-row gap-8 lg:gap-12">
           
           {/* Left Sidebar */}
-          <div className="w-full md:w-64 flex-shrink-0 space-y-8">
+          <div className="w-full md:w-64 shrink-0 space-y-8">
             {/* By Month */}
             <div>
               <h3 className="text-lg font-semibold text-gray-800 mb-4">By Month</h3>
@@ -62,10 +62,10 @@ export default function Announcements() {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="flex items-center gap-3 px-3 py-2 text-gray-500 hover:text-[#0066CC] hover:bg-gray-50 rounded-md transition-colors">
+                  <Link href="/knowledgebase" className="flex items-center gap-3 px-3 py-2 text-gray-500 hover:text-[#0066CC] hover:bg-gray-50 rounded-md transition-colors">
                     <Book size={18} className="text-gray-400" />
                     <span className="text-sm">Knowledgebase</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a href="#" className="flex items-center gap-3 px-3 py-2 text-gray-500 hover:text-[#0066CC] hover:bg-gray-50 rounded-md transition-colors">
@@ -90,7 +90,7 @@ export default function Announcements() {
           </div>
 
           {/* Main Content Area */}
-          <div className="flex-grow max-w-3xl">
+          <div className="grow max-w-3xl">
             <article className="border-b border-gray-100 pb-8">
               <time className="text-sm text-gray-500 mb-2 block">2nd May 2026</time>
               <h1 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
