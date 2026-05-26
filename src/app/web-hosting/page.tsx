@@ -1,6 +1,6 @@
 import PageHero from "@/components/PageHero";
 import WebHostingIntro from "@/components/WebHostingIntro";
-import WebHostingPricing from "@/components/WebHostingPricing";
+import Pricing from "@/components/Pricing";
 import WebHostingFeatures from "@/components/WebHostingFeatures";
 import WebHostingCTA from "@/components/WebHostingCTA";
 import TechSpecs from "@/components/TechSpecs";
@@ -21,7 +21,7 @@ export default function WebHosting() {
           "FREE WHMCS Client Management Software"
         ]}
       />
-      <WebHostingPricing />
+      <Pricing />
       <WebHostingIntro />
       <WebHostingFeatures />
       <WebHostingCTA />
