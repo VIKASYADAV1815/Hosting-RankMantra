@@ -74,14 +74,14 @@ export default function Hero() {
           </p>
 
           {/* High-Contrast Search Box Console */}
-          <div className="relative w-full max-w-2xl mb-8 z-20">
+          <div className="relative w-full max-w-2xl mb-8 z-50">
             <form 
               ref={formRef}
               action="https://hosting.rankmantra.com/cart.php?a=add&domain=register" 
               method="post"
               target="_blank"
               onSubmit={() => setShowSuggestions(false)}
-              className="flex w-full bg-white rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.3)] p-2 focus-within:ring-4 focus-within:ring-[#E00C15]/40 transition-all duration-200 relative z-20"
+              className="flex w-full bg-white rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.3)] p-2 focus-within:ring-4 focus-within:ring-[#E00C15]/40 transition-all duration-200 relative z-50"
             >
                <div className="pl-4 flex items-center justify-center text-[#4B4B4B]">
                  <Search size={20} />
@@ -113,7 +113,7 @@ export default function Hero() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.2 }}
-                  className="absolute top-full left-0 w-full mt-2 bg-white rounded-xl shadow-2xl border border-gray-100 overflow-hidden z-10 text-left"
+                  className="absolute top-full left-0 w-full mt-2 bg-white rounded-xl shadow-2xl border border-gray-100 overflow-hidden z-[100] text-left"
                 >
                   <div className="p-2">
                     <div className="px-4 py-2 text-xs font-bold text-gray-400 uppercase tracking-wider">
