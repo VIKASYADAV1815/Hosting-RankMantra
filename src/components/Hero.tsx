@@ -61,19 +61,24 @@ export default function Hero() {
           </p>
 
           {/* High-Contrast Search Box Console */}
-          <div className="flex w-full max-w-2xl bg-white rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.3)] p-2 mb-8 focus-within:ring-4 focus-within:ring-[#E00C15]/40 transition-all duration-200">
+          <form 
+            action="https://hosting.rankmantra.com/cart.php?a=add&domain=register" 
+            method="post"
+            className="flex w-full max-w-2xl bg-white rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.3)] p-2 mb-8 focus-within:ring-4 focus-within:ring-[#E00C15]/40 transition-all duration-200"
+          >
              <div className="pl-4 flex items-center justify-center text-[#4B4B4B]">
                <Search size={20} />
              </div>
              <input 
                type="text" 
+               name="query"
                placeholder="Find your perfect domain name..." 
                className="flex-1 bg-transparent border-none outline-none py-3 px-4 text-[#4B4B4B] placeholder:text-gray-400 font-bold text-base w-full"
              />
-             <button className="bg-[#E00C15] text-white px-8 py-3 rounded-lg font-bold text-base hover:bg-[#c00a12] active:scale-[0.98] transition-all shadow-md">
+             <button type="submit" className="bg-[#E00C15] text-white px-8 py-3 rounded-lg font-bold text-base hover:bg-[#c00a12] active:scale-[0.98] transition-all shadow-md">
                Search
              </button>
-          </div>
+          </form>
         </motion.div>
       </div>
     </section>
